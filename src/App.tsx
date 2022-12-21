@@ -9,9 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/tv/:id" element={<TvDetail />} />
         <Route path="/tv" element={<TvPage />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/" element={<MainPage />} />
       </Routes>
     </BrowserRouter>

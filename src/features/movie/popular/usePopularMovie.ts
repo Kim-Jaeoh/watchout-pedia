@@ -6,7 +6,8 @@ import { ListResponse, MovieDetail } from "../../../types";
 const usePopularMovie = () => {
   return useQuery<AxiosResponse<ListResponse<MovieDetail>>, AxiosError>(
     "usePopularMovie",
-    popularApi
+    popularApi,
+    { refetchOnWindowFocus: false }
   );
 };
 

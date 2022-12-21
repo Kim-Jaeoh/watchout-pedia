@@ -7,8 +7,6 @@ export const upcomingApi = () => axiosInstance.get("/movie/upcoming");
 export const imageApi = (movieId: string) =>
   axiosInstance.get(`/movie/${movieId}/images`);
 
-// export const configApi = () => axiosInstance.get("/configuration");
-
 export const nowPlayingApi = () => axiosInstance.get("/movie/now_playing");
 
 export const topRatedApi = () => axiosInstance.get("/movie/top_rated");

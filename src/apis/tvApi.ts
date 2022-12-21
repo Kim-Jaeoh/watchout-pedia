@@ -10,10 +10,10 @@ export const popularApi = () => axiosInstance.get("/tv/popular");
 
 export const topRatedApi = () => axiosInstance.get("/tv/top_rated");
 
-export const detailApi = (TvId: string) => axiosInstance.get(` /tv/${TvId}`);
+export const detailApi = (id: string) => axiosInstance.get(`/tv/${id}`);
 
-export const similarApi = (TvId: string) =>
-  axiosInstance.get(`/tv/${TvId}/similar`);
+export const similarApi = (id: string) =>
+  axiosInstance.get(`/tv/${id}/similar`);
 
 export const searchApi = (query: string) =>
   axiosInstance.get(`/search/tv?query=${query}`);

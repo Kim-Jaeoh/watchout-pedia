@@ -6,7 +6,8 @@ import { ListResponse, MovieDetail } from "../../../types";
 const useTopRateMovie = () => {
   return useQuery<AxiosResponse<ListResponse<MovieDetail>>, AxiosError>(
     "useTopRateMovie",
-    topRatedApi
+    topRatedApi,
+    { refetchOnWindowFocus: false }
   );
 };
 

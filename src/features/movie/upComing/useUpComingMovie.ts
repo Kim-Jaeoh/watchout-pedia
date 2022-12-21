@@ -6,7 +6,8 @@ import { ListResponse, MovieDetail } from "../../../types";
 const useUpComingMovie = () => {
   return useQuery<AxiosResponse<ListResponse<MovieDetail>>, AxiosError>(
     "useUpComingMovie",
-    upcomingApi
+    upcomingApi,
+    { refetchOnWindowFocus: false }
   );
 };
 

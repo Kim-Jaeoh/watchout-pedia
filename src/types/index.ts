@@ -135,7 +135,7 @@ interface Dates {
 }
 
 export interface ListResponse<T> {
-  dates: Dates;
+  // dates: Dates;
   page: number;
   results: T[];
   total_pages: number;
